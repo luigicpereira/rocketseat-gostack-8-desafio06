@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -43,13 +44,15 @@ export const Stars = styled.FlatList.attrs({
   background: #fff;
 `;
 
-export const Starred = styled.View`
+export const RepoButton = styled(RectButton)`
   background: #f5f5f5;
   border-radius: 4px;
-  padding: 10px 15px;
   margin-bottom: 20px;
-  flex-direction: row;
+  align-self: stretch;
+  justify-content: center;
   align-items: center;
+  padding: 10px 15px;
+  flex-direction: row;
 `;
 
 export const OwnerAvatar = styled.Image`
